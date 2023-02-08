@@ -51,11 +51,9 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 
 	cout << Enemy::DethFlag << endl;
 
-	delete enemy1;
-
+	
 	cout << Enemy::DethFlag << endl;
-	delete enemy2;
-	delete enemy3;
+	
 	cout << Enemy::DethFlag << endl;
 
 	// 最新のキーボード情報用
@@ -116,6 +114,9 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 			break;
 		}
 	}
+	delete enemy1;
+	delete enemy2;
+	delete enemy3;
 	// Dxライブラリ終了処理
 	DxLib_End();
 
